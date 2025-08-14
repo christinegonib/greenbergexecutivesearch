@@ -172,17 +172,18 @@ nav a:hover {
 
 /* === Footer === */
 .footer {
-.footer {
   background-color: #353333;
   color: #eee;
   font-family: Arial, sans-serif;
-  padding-top: 30px;
+  padding: 40px 20px;
+  width: 100%;
 }
 
 .footer-inner {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
 
 .footer-container {
   display: flex;
@@ -307,4 +308,3 @@ nav a:hover {
   .footer-bottom {
     font-size: 0.85rem;
   }
-}
