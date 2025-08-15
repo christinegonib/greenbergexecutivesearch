@@ -82,7 +82,8 @@ nav a:hover {
   background-color: #353333;
   color: #eee;
   font-family: Arial, sans-serif;
-  padding-top: 30px;
+  padding: 40px 20px;
+  width: 100%;
 }
 
 .footer-inner {
@@ -99,7 +100,7 @@ nav a:hover {
   justify-content: space-between;
   margin-bottom: 20px;
   flex: 1 1 300px;
-  padding-left: 20px; /* Adds space from the left edge */
+  padding-left: 20px;
 }
 
 .footer-contact,
@@ -126,19 +127,14 @@ nav a:hover {
 }
 
 .footer-bottom {
-  /* position: absolute; */
   text-align: center;
   padding: 10px 0;
-  /* background-color: #1a4d3b; */
   font-size: 0.9em;
   color: #ccc;
   border-top: 1px solid #444;
   background-color: #2a4d3c;
   width: 100%;
   margin-top: 0;
-  /* left: 0;
-  margin-top: 0;
-  bottom: 0, */
 }
 
 .footer-bottom p {
