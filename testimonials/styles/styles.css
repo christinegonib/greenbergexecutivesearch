@@ -256,11 +256,11 @@ nav {
 
 /* ====== Footer ====== */
 .footer {
-  background-color: #353333;
+  background-color: #1a3c2f;
   color: #eee;
   font-family: Arial, sans-serif;
-  padding: 40px 20px;
-  width: 100%;
+  padding: 30px;
+  /* width: 100%; */
 }
 
 .footer-inner {
@@ -343,9 +343,6 @@ nav {
   text-decoration: underline;
 }
 @media (min-width: 768px) {
-  .some-class {
-    margin: 20px;
-  }
 }
 .footer-contact {
   padding-left: 40px;

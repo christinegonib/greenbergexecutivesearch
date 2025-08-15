@@ -161,19 +161,14 @@ h2 {
 }
 
 .footer-bottom {
-  /* position: absolute; */
   text-align: center;
   padding: 10px 0;
-  /* background-color: #1a4d3b; */
   font-size: 0.9em;
   color: #ccc;
   border-top: 1px solid #444;
-  background-color: #2a4d3c;
+  background-color: #1a3c2f;
   width: 100%;
   margin-top: 0;
-  /* left: 0;
-  margin-top: 0;
-  bottom: 0, */
 }
 
 .footer-bottom p {
@@ -181,7 +176,7 @@ h2 {
 }
 
 .footer-sitemap nav a:hover {
-  color: #1a4d3b;
+  color: #1a3c2f;
 }
 .footer {
   border-top: 1px solid #444;
