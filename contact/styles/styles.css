@@ -423,3 +423,53 @@ nav ul li a:hover {
     padding: 8px 0;
   }
 }
+/* === Mobile Hamburger Menu (keeps desktop EXACTLY the same) === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+/* Mobile styles only */
+@media (max-width: 768px) {
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide the nav by default on mobile */
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #1a3c2f;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+
+  /* Show nav when toggled */
+  header nav ul.open {
+    display: flex;
+  }
+
+  /* Center links on mobile */
+  header nav ul li a {
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  /* Keep header layout clean */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
