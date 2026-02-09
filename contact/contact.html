@@ -49,42 +49,43 @@
 <section class="contact-form">
   <h2 class="section-title">Message Us</h2>
 
-    <form action="https://submit-form.com/o8dAIxWQ4"method="POST" onsubmit="showConfirmation(event)">
-
-    
-    <div class="mb-3 input-group">
-      <span class="input-group-text bg-white border-end-0"><i class="bi bi-person"></i></span>
-      <input type="text" id="name" name="name" class="form-control border-start-0" placeholder="Name" required>
-    </div>
-
-    <div class="mb-3 input-group">
-      <span class="input-group-text bg-white border-end-0"><i class="bi bi-envelope"></i></span>
-      <input type="email" id="email" name="email" class="form-control border-start-0" placeholder="Email" required>
-    </div>
-
-    <div class="mb-3 input-group">
-      <span class="input-group-text bg-white border-end-0"><i class="bi bi-chat-text"></i></span>
-      <textarea id="message" name="message" rows="5" class="form-control border-start-0" placeholder="Message" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-dark">Send Message</button>
-  </form>
-
-  <div class="confirmation-message" id="confirmation">
-    ✅ Thank you! Your message has been submitted.
-  </div>
-</section>
-
-<script> 
-function showConfirmation(event) { 
-event.preventDefault(); // Stop the page from reloading 
-// Show confirmation message 
-document.getElementById("confirmation").style.display = "block"; 
-// Actually submit the form to SubmitForm 
-event.target.submit(); 
-// Clear the form fields AFTER submission 
-event.target.reset(); 
-} </script>
+<form method="POST" onsubmit="submitForm(event)"> 
+  <div class="mb-3 input-group">
+     <span class="input-group-text bg-white border-end-0">
+       <i class="bi bi-person"></i>
+       </span> 
+       <input type="text" id="name" name="name" class="form-control border-start-0" placeholder="Name" required> </div> 
+       <div class="mb-3 input-group"> 
+        <span class="input-group-text bg-white border-end-0"> 
+          <i class="bi bi-envelope"></i> 
+        </span> 
+        <input type="email" id="email" name="email" class="form-control border-start-0" placeholder="Email" required> </div> 
+        <div class="mb-3 input-group"> 
+         <span class="input-group-text bg-white border-end-0"> 
+          <i class="bi bi-chat-text"></i> 
+        </span> 
+        <textarea id="message" name="message" rows="5" class="form-control border-start-0" placeholder="Message" required></textarea> </div> 
+        <button type="submit" class="btn btn-dark">Send Message</button> 
+      </form> 
+      <!-- Hidden confirmation message --> 
+       <div class="confirmation-message" id="confirmation" style="display:none; margin-top:15px;"> ✅ Thank you! Your message has been submitted. </div> 
+       <script> 
+       function submitForm(event) { 
+        event.preventDefault(); 
+        
+        const form = event.target; 
+        const data = new FormData(form); 
+        fetch("https://submit-form.com/o8dAIxWQ4", { 
+          method: "POST", 
+          body: data 
+          }) 
+          .then(() => { 
+            document.getElementById("confirmation").style.display = "block"; 
+            form.reset(); 
+            }) 
+            .catch(() => { 
+              alert("There was an error submitting the form. Please try again."); }); } 
+              </script>
 
     <section class="contact-footer">
   <img src="contactus.png" alt="Contact Us" class="contact-image" />
