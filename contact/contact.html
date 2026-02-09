@@ -49,8 +49,7 @@
 <section class="contact-form">
   <h2 class="section-title">Message Us</h2>
 
-  <!-- <form action="https://wp.zybooks.com/form-viewer.php" method="GET" onsubmit="showConfirmation(event)"> -->
-    <form action="https://submit-form.com/Vwaa2Kbgy" method="POST" onsubmit="showConfirmation(event)">
+    <form action="https://submit-form.com/o8dAIxWQ4"method="POST" onsubmit="showConfirmation(event)">
 
     
     <div class="mb-3 input-group">
@@ -76,21 +75,16 @@
   </div>
 </section>
 
-<!-- 
-  <script>
-    function showConfirmation(event) {
-      event.preventDefault(); // Prevent actual submission
-      document.getElementById('confirmation').style.display = 'block';
-    } -->
-    <script>
-  function showConfirmation(event) {
-    event.preventDefault(); // Prevent actual submission
-    document.getElementById("confirmation").style.display = "block";
-
-    // Clear the form fields
-    event.target.reset();}
-</script>
-
+<script> 
+function showConfirmation(event) { 
+event.preventDefault(); // Stop the page from reloading 
+// Show confirmation message 
+document.getElementById("confirmation").style.display = "block"; 
+// Actually submit the form to SubmitForm 
+event.target.submit(); 
+// Clear the form fields AFTER submission 
+event.target.reset(); 
+} </script>
 
     <section class="contact-footer">
   <img src="contactus.png" alt="Contact Us" class="contact-image" />
