@@ -399,6 +399,7 @@ nav ul li a:hover {
     font-size: 0.85rem;
   }
 }
+/* Old Mobile NA - Disables for Hamburger Menu
 @media (max-width: 768px) {
   header {
     flex-direction: column;
