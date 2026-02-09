@@ -50,18 +50,34 @@
 <script> 
 function submitForm(event) { 
   event.preventDefault(); 
-  const form = event.target; 
+
+const form = event.target; 
   
- const data = { 
+const data = { 
   name: form.name.value, 
   email: form.email.value, 
   message: form.message.value 
   }; 
-  fetch("https://submit-form.com/o8dAIxWQ4", { 
-    method: "POST", 
-    headers: { 
-      "Content-Type": "application/json", 
-      "Accept": "application/json" }, body: JSON.stringify(data) }) .then(() => { document.getElementById("confirmation").style.display = "block"; form.reset(); }) .catch(() => { alert("There was an error submitting the form. Please try again."); }); } </script> </section>
+fetch("https://submit-form.com/o8dAIxWQ4", { 
+  method: "POST", 
+  headers: { 
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+     }, 
+     body: JSON.stringify(data)
+      })
+
+ 
+        .then(() => { 
+          document.getElementById("confirmation").style.display = "block"; 
+          form.reset(); 
+          }) 
+          .catch(() => { 
+            alert("There was an error submitting the form. Please try again."); 
+            }); 
+            } 
+            </script> 
+            </section>
 
     <section class="contact-footer">
   <img src="contactus.png" alt="Contact Us" class="contact-image" />
