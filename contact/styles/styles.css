@@ -328,7 +328,8 @@ nav ul li a:hover {
   padding-left: 40px;
 }
 /* === Responsive Design: Tablets & Phones === */
-@media (max-width: 769px) {
+
+@media (max-width: 768px) {
   .testimonial-graphic {
     max-width: 80%;
     margin-bottom: 20px;
