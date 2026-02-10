@@ -327,9 +327,18 @@ nav ul li a:hover {
 .footer-contact {
   padding-left: 40px;
 }
+
 /* === Responsive Design: Tablets & Phones === */
 
 @media (max-width: 768px) {
+  /* shrink the long site title so the hamburger has room */
+  header h1 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    max-width: 70%;
+    margin: 0;
+  }
+
   .testimonial-graphic {
     max-width: 80%;
     margin-bottom: 20px;
