@@ -4,14 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Greenberg Executive Search</title>
-     <link rel="stylesheet" href="/styles/styles.css" />
 
-    
+    <!-- GLOBAL MASTER STYLESHEET -->
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
 
   <body>
+    <!-- ============================
+       GLOBAL HEADER (Matches CSS)
+       ============================ -->
     <header>
-      <h1 class="site-title">Greenberg Executive Search</h1>
+      <div class="branding">
+        <img src="../images/logo.png" alt="Greenberg Executive Search Logo" class="logo" />
+        <h1>Greenberg Executive Search</h1>
+        <p class="tagline">Public Relations & Communications Recruitment</p>
+      </div>
+
+      <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -23,66 +37,19 @@
       </nav>
     </header>
 
+    <!-- ============================
+       ABOUT PAGE CONTENT
+       ============================ -->
     <main class="container">
       <section class="about-intro">
         <h1>About Greenberg Executive Search</h1>
         <p>
-          After 23 incredible years at Quantum and 25 years in the industry, I launched <strong>Greenberg Executive Search</strong> to bring a more
-          personal, strategic approach to recruitment in <strong>Public Relations & Communications</strong>.
+          After 23 incredible years at Quantum and 25 years in the industry, I launched
+          <strong>Greenberg Executive Search</strong> to bring a more personal, strategic approach to recruitment in
+          <strong>Public Relations & Communications</strong>.
         </p>
-        <p>
-          I partner with leading <strong>PR agencies, corporations, and nonprofits</strong> to place exceptional talent in
-          <strong>mid-level to senior roles</strong> across every sector of PR.
-        </p>
-      </section>
-
-      <section class="about-sectors-flex">
-        <div class="photo-left">
-          <img src="jenb.jpg" alt="Jennifer Greenberg Headshot" />
-          <p class="caption">Jennifer Greenberg, Founder</p>
-        </div>
-      </div>
-        <div class="sectors-content">
-          <h2>Sectors We Serve</h2>
-          <ul>
-            <li>Consumer</li>
-            <li>Healthcare</li>
-            <li>Technology</li>
-            <li>Finance</li>
-            <li>Beauty & Fashion</li>
-            <li>Lifestyle</li>
-            <li>Corporate Communications</li>
-          </ul>
-        </div>
+        <p>I partner with leading <strong>PR agencies, corporations, and nonprofits</strong></p>
       </section>
     </main>
-
-       
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-container">
-          <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p>Greenberg Executive Search</p>
-            <p>Email: jennifer@greenbergexecutivesearch.com</p>
-          </div>
-
-          <div class="footer-sitemap">
-            <h4>Site Map</h4>
-            <nav>
-          <a href="../index.html">Home</a>
-<a href="../about/about.html">About</a>
-<a href="../services/services.html">Services</a>
-<a href="../testimonials/testimonials.html">Testimonials</a>
-<a href="../contact/contact.html">Contact</a>
-      </nav>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>&copy; 2025 Greenberg Executive Search. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-    </body>
+  </body>
 </html>
