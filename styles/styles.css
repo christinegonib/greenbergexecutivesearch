@@ -204,6 +204,47 @@ nav ul li a:hover {
   color: white;
 }
 
+/* ============================
+   SERVICES PAGE — TABLE DESIGN
+============================ */
+
+.services-table {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.services-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.services-table th {
+  background-color: #1a3c2f;
+  color: white;
+  padding: 14px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.services-table td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.services-table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.services-table tr:hover {
+  background-color: #ececec;
+}
+
 /* ============================================
    6. CONTACT PAGE ONLY
 ============================================ */
