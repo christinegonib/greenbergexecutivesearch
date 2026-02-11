@@ -1,4 +1,4 @@
-/* 🌿 Base Styles */
+/* 🌿 Base Styles Main Document  */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -393,32 +393,6 @@ nav ul li a:hover {
   }
 }
 
-/* Old Mobile NA - Disables for Hamburger Menu
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-    padding-top: 10px;
-    align-items: center;
-  }
-
-  nav ul li {
-    display: block;
-  }
-
-  nav ul li a {
-    font-size: 1rem;
-    padding: 8px 0;
-  }
-}
-  */
 /* === Mobile Hamburger Menu (keeps desktop EXACTLY the same) === */
 .hamburger {
   display: none;

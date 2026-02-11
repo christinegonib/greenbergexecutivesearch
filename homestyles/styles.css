@@ -1,3 +1,7 @@
+/* ============================
+   HOMEPAGE HERO SECTION ONLY
+   ============================ */
+
 .hero {
   position: relative;
   width: 100%;
@@ -12,6 +16,7 @@
   object-fit: cover;
   display: block;
 }
+
 .hero-text {
   position: absolute;
   bottom: 40px;
@@ -25,6 +30,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   background-color: rgba(23, 22, 22, 0.75);
 }
+
 .hero-text h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
@@ -46,11 +52,11 @@
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 10px;
-  padding-left: 0; /* ensures no extra indent */
+  padding-left: 0;
 }
 
 .cta-buttons a {
-  background-color: #1a3c2f; /* deep green-gray */
+  background-color: #1a3c2f;
   color: #ffffff;
   padding: 12px 28px;
   text-decoration: none;
@@ -61,7 +67,7 @@
 }
 
 .cta-buttons a:hover {
-  background-color: #44564d; /* slightly lighter on hover */
+  background-color: #44564d;
 }
 
 .overlay-box {
