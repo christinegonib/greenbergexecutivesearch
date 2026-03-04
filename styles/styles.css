@@ -190,59 +190,128 @@ nav ul li a:hover {
 }
 
 /* ============================================
-   5. SERVICES PAGE ONLY
+   5. SERVICES PAGE ONLY — CLEAN + CONSOLIDATED
 ============================================ */
+
+/* Service sections */
+.service-section {
+  margin: 40px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.service-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1a3c2f;
+}
+
+.service-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Services table */
+.services-table {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .services-table table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.services-table th {
-  background-color: #1a3c2f;
-  color: white;
-}
-
-/* ============================
-   SERVICES PAGE — TABLE DESIGN
-============================ */
-
-.services-table {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.services-table table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-}
-
-.services-table th {
-  background-color: #1a3c2f;
-  color: white;
-  padding: 14px;
+.services-table th,
+.services-table td {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
   text-align: left;
+}
+
+.services-table th {
+  background-color: #1a3c2f;
+  color: white;
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-.services-table td {
-  padding: 14px;
-  border-bottom: 1px solid #ddd;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 .services-table tr:nth-child(even) {
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
 }
 
-.services-table tr:hover {
-  background-color: #ececec;
+/* CTA */
+.cta {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.cta p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.cta a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1a3c2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.cta a:hover {
+  background-color: #44564d;
+}
+
+/* Mobile table formatting */
+@media (max-width: 768px) {
+  .services-table table,
+  .services-table thead,
+  .services-table tbody,
+  .services-table th,
+  .services-table td,
+  .services-table tr {
+    display: block;
+  }
+
+  .services-table tr {
+    margin-bottom: 20px;
+  }
+
+  .services-table th {
+    display: none;
+  }
+
+  .services-table td {
+    border: none;
+    padding: 8px 0;
+  }
+
+  .services-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+/* Large-screen hero centering */
+@media (min-width: 1200px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
 }
 
 /* ============================================

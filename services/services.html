@@ -10,8 +10,16 @@
   </head>
 
   <body>
+    <!-- UPDATED HEADER WITH HAMBURGER -->
     <header>
-      <h1>Greenberg Executive Search</h1>
+      <h1 class="site-title">Greenberg Executive Search</h1>
+
+      <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -22,7 +30,10 @@
         </ul>
       </nav>
     </header>
+
+    <!-- UPDATED HERO WITH IMAGE -->
     <div class="hero">
+      <img src="../images/hero.jpg" alt="Business professionals" class="hero-img" />
       <div class="hero-text">
         <h2>Recruiting with Purpose</h2>
         <p>We connect companies with exceptional talent across industries.</p>
@@ -85,6 +96,7 @@
           </tbody>
         </table>
       </section>
+
       <div class="cta">
         <p>Ready to find your next great hire?</p>
         <a href="../contact/contact.html">Get in Touch</a>
