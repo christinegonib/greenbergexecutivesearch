@@ -303,17 +303,6 @@ nav ul li a:hover {
   }
 }
 
-/* Large-screen hero centering */
-@media (min-width: 1200px) {
-  .hero {
-    justify-content: center;
-  }
-
-  .hero-text {
-    text-align: center;
-  }
-}
-
 /* ============================================
    6. CONTACT PAGE ONLY
 ============================================ */
