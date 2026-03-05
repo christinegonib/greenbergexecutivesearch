@@ -271,6 +271,10 @@ nav ul li a:hover {
   background-color: #44564d;
 }
 
+.services-hero .hero-text {
+  bottom: 120px; /* adjust this number until it looks perfect */
+}
+
 /* Mobile table formatting */
 @media (max-width: 768px) {
   .services-table table,
