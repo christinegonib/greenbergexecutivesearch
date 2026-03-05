@@ -444,6 +444,8 @@ nav ul li a:hover {
     padding: 10px 0;
     font-size: 1.1rem;
   }
+
+  /* MOBILE HERO TEXT OVERRIDE */
   .hero-text {
     bottom: 20px;
     left: 50%;
@@ -452,20 +454,14 @@ nav ul li a:hover {
     max-width: 90%;
   }
 
-  @media (max-width: 768px) {
-    .about-sectors-flex {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .sectors-content {
-      max-width: 100%;
-    }
-  }
-
   /* ABOUT PAGE */
   .about-sectors-flex {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .sectors-content {
+    max-width: 100%;
   }
 
   /* FOOTER */
