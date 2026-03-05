@@ -367,7 +367,7 @@ nav ul li a:hover {
 
 .hero-text {
   position: absolute;
-  bottom: 12%;
+  bottom: 18%; /* Adjusted for large screens */
   left: 5%;
   background-color: rgba(23, 22, 22, 0.75);
   color: white;
