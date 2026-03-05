@@ -271,10 +271,6 @@ nav ul li a:hover {
   background-color: #44564d;
 }
 
-.services-hero .hero-text {
-  bottom: 120px; /* adjust this number until it looks perfect */
-}
-
 /* Mobile table formatting */
 @media (max-width: 768px) {
   .services-table table,
@@ -362,15 +358,22 @@ nav ul li a:hover {
 
 .hero-text {
   position: absolute;
-  bottom: 40px; /* or your preferred value */
-  left: 60px;
   background-color: rgba(23, 22, 22, 0.75);
   color: white;
   padding: 20px 35px;
   max-width: 620px;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 2; /* ← ADD THIS */
+  z-index: 2;
+}
+.home-hero .hero-text {
+  bottom: 18%;
+  left: 5%;
+}
+
+.services-hero .hero-text {
+  bottom: 120px;
+  left: 60px;
 }
 
 .hero-text h2 {
@@ -387,11 +390,6 @@ nav ul li a:hover {
   margin-bottom: 20px;
   font-weight: 400;
   line-height: 1.6;
-}
-
-.home-hero .hero-text {
-  bottom: 18%;
-  left: 5%;
 }
 
 .cta-buttons {
