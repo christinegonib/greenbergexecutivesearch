@@ -33,7 +33,7 @@ header {
   color: white;
   padding: 20px 40px;
   display: flex;
-  justify-content: space-between; /* RIGHT-ALIGNED NAV */
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
@@ -190,10 +190,9 @@ nav ul li a:hover {
 }
 
 /* ============================================
-   5. SERVICES PAGE ONLY — CLEAN + CONSOLIDATED
+   5. SERVICES PAGE ONLY
 ============================================ */
 
-/* Service sections */
 .service-section {
   margin: 40px 0;
   padding: 0;
@@ -208,6 +207,7 @@ nav ul li a:hover {
 .service-section p {
   margin: 0;
 }
+
 .service-section + .service-section {
   margin-top: 50px;
 }
@@ -315,114 +315,6 @@ nav ul li a:hover {
   margin-bottom: 2rem;
 }
 
-/* ============================================
-   7. TESTIMONIALS PAGE ONLY
-============================================ */
-
-/* ============================================
-   7. TESTIMONIALS PAGE — RESTORED DESIGN
-============================================ */
-
-/* Background stays consistent with other pages */
-body.testimonials-page {
-  background: linear-gradient(to bottom, #e6e3e3, #dcdcdc);
-}
-
-/* Main spotlight container */
-.testimonial-spotlight {
-  background-color: #eceaea;
-  padding: 100px 30px 60px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  margin: 60px auto;
-  max-width: 900px;
-  text-align: center;
-}
-
-/* Speech bubble + stars graphic */
-.testimonial-graphic {
-  max-width: 320px;
-  height: auto;
-  margin: 0 auto 40px;
-  display: block;
-}
-
-/* Testimonial card */
-.quote-box {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 40px 45px;
-  background-color: #667c74;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  text-align: center;
-}
-
-/* Opening quote mark */
-.quote-icon {
-  font-size: 2.4rem;
-  color: #f1f1f1;
-  margin-bottom: 10px;
-  display: block;
-}
-
-/* Testimonial text */
-.quote-text {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1.2rem;
-  color: #f9f9f9;
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-/* Author name */
-.quote-author {
-  font-weight: bold;
-  font-size: 1.05rem;
-  margin-top: 1rem;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-/* Author role */
-.quote-role {
-  font-style: italic;
-  font-size: 0.95rem;
-  color: #f2f2f2;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-/* Divider (optional, if you want it under the graphic) */
-.divider {
-  border: none;
-  height: 2px;
-  background-color: #c8cdc8;
-  width: 60px;
-  margin: 25px auto;
-}
-
-/* Carousel controls */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(100%);
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .testimonial-graphic {
-    max-width: 260px;
-    margin-bottom: 30px;
-  }
-
-  .quote-box {
-    padding: 30px 25px;
-  }
-
-  .quote-text {
-    font-size: 1rem;
-  }
-}
-
 /* ============================
    HOMEPAGE — ORIGINAL DESIGN
 ============================ */
@@ -440,8 +332,8 @@ body.testimonials-page {
   height: 100%;
   object-fit: cover;
   display: block;
-  z-index: 1; /* ← ADD THIS */
-  position: relative; /* required for z-index to work */
+  z-index: 1;
+  position: relative;
 }
 
 .hero-text {
@@ -454,6 +346,7 @@ body.testimonials-page {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
+
 .home-hero .hero-text {
   bottom: 18%;
   left: 5%;
@@ -509,7 +402,6 @@ body.testimonials-page {
 ============================================ */
 
 @media (max-width: 1024px) {
-  /* MOBILE HEADER */
   .hamburger {
     display: flex;
   }
@@ -533,7 +425,6 @@ body.testimonials-page {
     font-size: 1.1rem;
   }
 
-  /* MOBILE HERO TEXT OVERRIDE */
   .hero-text {
     bottom: 20px !important;
     left: 50% !important;
@@ -541,11 +432,11 @@ body.testimonials-page {
     text-align: center;
     max-width: 90%;
   }
+
   .cta-buttons {
     justify-content: center;
   }
 
-  /* ABOUT PAGE */
   .about-sectors-flex {
     flex-direction: column;
     text-align: center;
@@ -555,15 +446,15 @@ body.testimonials-page {
     max-width: 100%;
   }
 
-  /* FOOTER */
   .footer-container {
     flex-direction: column;
     text-align: center;
   }
 }
+
 @media (max-width: 480px) {
   .hero {
-    height: 520px; /* give the text room */
+    height: 520px;
   }
 
   .hero-text {
@@ -585,5 +476,98 @@ body.testimonials-page {
   .cta-buttons a {
     padding: 10px 20px;
     font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   7. TESTIMONIALS PAGE — RESTORED DESIGN
+============================================ */
+
+body.testimonials-page {
+  background: linear-gradient(to bottom, #e6e3e3, #dcdcdc);
+}
+
+.testimonial-spotlight {
+  background-color: #eceaea;
+  padding: 100px 30px 60px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin: 60px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.testimonial-graphic {
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+.quote-box {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 45px;
+  background-color: #667c74;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.quote-icon {
+  font-size: 2.4rem;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.quote-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  color: #f9f9f9;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.quote-author {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.quote-role {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #f2f2f2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #c8cdc8;
+  width: 60px;
+  margin: 25px auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+  .testimonial-graphic {
+    max-width: 260px;
+    margin-bottom: 30px;
+  }
+
+  .quote-box {
+    padding: 30px 25px;
+  }
+
+  .quote-text {
+    font-size: 1rem;
   }
 }
