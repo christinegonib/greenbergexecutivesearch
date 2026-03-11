@@ -303,9 +303,10 @@ nav ul li a:hover {
 }
 
 /* ============================================
-   6. CONTACT PAGE ONLY
+   6. CONTACT PAGE ONLY — RESTORED DESIGN
 ============================================ */
 
+/* Main card containers */
 .contact-card,
 .contact-info,
 .contact-message {
@@ -313,6 +314,109 @@ nav ul li a:hover {
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Larger card for intro + contact info */
+.contact-card {
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* Contact info block */
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #1a4d3b;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Contact form wrapper */
+.contact-form {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+/* Form card styling */
+.contact-form form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Inputs + textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Submit button */
+.contact-form button {
+  background-color: #1a3c2f;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  background-color: #145c45;
+}
+
+/* Confirmation message */
+.confirmation-message {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #dff0e8;
+  border-left: 5px solid #1a3c2f;
+  font-weight: bold;
+  display: none;
+  border-radius: 6px;
+}
+
+/* Contact footer image + tagline */
+.contact-footer {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.contact-image {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.contact-tagline {
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 /* ============================
