@@ -9,8 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- UPDATED HEADER WITH HAMBURGER (MATCHES OTHER PAGES) -->
     <header>
-      <h1>Greenberg Executive Search</h1>
+      <h1 class="site-title">Greenberg Executive Search</h1>
+
+      <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -22,7 +30,8 @@
       </nav>
     </header>
 
-    <section class="testimonial-spotlight container my-5">
+    <!-- TESTIMONIAL SPOTLIGHT -->
+    <section class="testimonial-spotlight my-5">
       <div class="row align-items-center">
         <!-- Left Column: Graphic -->
         <div class="col-md-6 text-center mb-4 mb-md-0">
@@ -38,12 +47,12 @@
                 <div class="quote-box">
                   <span class="quote-icon">“</span>
                   <p class="quote-text">
-                    <strong>Jennifer has a unique talent in connecting the right people with the right positions and career. </strong><br />She's a
-                    strategic partner in helping to provide counsel for thoughtful resignation and offer acceptance communication.
+                    <strong>Jennifer has a unique talent in connecting the right people with the right positions and career. </strong><br />
+                    She's a strategic partner in helping to provide counsel for thoughtful resignation and offer acceptance communication.
                   </p>
                   <p class="quote-author">
                     <strong>Jessica Nelson</strong><br />
-                    <span class="quote-role">Entertainment Marketing Celebrity, Influencer & Branded Partnerships</span>
+                    <span class="quote-role">Entertainment Marketing Celebrity, Influencer &amp; Branded Partnerships</span>
                   </p>
                   <a href="../contact/contact.html" class="btn btn-dark mt-3">Let’s Connect</a>
                 </div>
@@ -58,11 +67,12 @@
                   </p>
                   <p class="quote-author">
                     <strong>Keagan Smith</strong><br />
-                    <span class="quote-role">Senior Account Executive – Consumer, Travel & Entertainment</span>
+                    <span class="quote-role">Senior Account Executive – Consumer, Travel &amp; Entertainment</span>
                   </p>
                   <a href="../contact/contact.html" class="btn btn-dark mt-3">Let’s Connect</a>
                 </div>
               </div>
+
               <!-- Slide 3 -->
               <div class="carousel-item">
                 <div class="quote-box">
@@ -78,6 +88,7 @@
                   <a href="../contact/contact.html" class="btn btn-dark mt-3">Let’s Connect</a>
                 </div>
               </div>
+
               <!-- Slide 4 -->
               <div class="carousel-item">
                 <div class="quote-box">
@@ -89,7 +100,7 @@
                   </p>
                   <p class="quote-author">
                     <strong>Jason Kaufman</strong><br />
-                    <span class="quote-role">Head of Marketing & Communications</span>
+                    <span class="quote-role">Head of Marketing &amp; Communications</span>
                   </p>
                   <a href="../contact/contact.html" class="btn btn-dark mt-3">Let’s Connect</a>
                 </div>
@@ -109,7 +120,6 @@
     </section>
 
     <!-- Footer -->
-
     <footer class="footer">
       <div class="footer-inner">
         <div class="footer-container">
