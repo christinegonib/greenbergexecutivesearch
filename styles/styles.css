@@ -319,19 +319,108 @@ nav ul li a:hover {
    7. TESTIMONIALS PAGE ONLY
 ============================================ */
 
+/* ============================================
+   7. TESTIMONIALS PAGE — RESTORED DESIGN
+============================================ */
+
+/* Background stays consistent with other pages */
+body.testimonials-page {
+  background: linear-gradient(to bottom, #e6e3e3, #dcdcdc);
+}
+
+/* Main spotlight container */
 .testimonial-spotlight {
   background-color: #eceaea;
   padding: 100px 30px 60px;
   border-radius: 12px;
-  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   margin: 60px auto;
+  max-width: 900px;
+  text-align: center;
 }
 
+/* Speech bubble + stars graphic */
+.testimonial-graphic {
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+/* Testimonial card */
 .quote-box {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 45px;
   background-color: #667c74;
-  padding: 35px 40px;
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   text-align: center;
+}
+
+/* Opening quote mark */
+.quote-icon {
+  font-size: 2.4rem;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Testimonial text */
+.quote-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  color: #f9f9f9;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Author name */
+.quote-author {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Author role */
+.quote-role {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #f2f2f2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Divider (optional, if you want it under the graphic) */
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #c8cdc8;
+  width: 60px;
+  margin: 25px auto;
+}
+
+/* Carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .testimonial-graphic {
+    max-width: 260px;
+    margin-bottom: 30px;
+  }
+
+  .quote-box {
+    padding: 30px 25px;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
 }
 
 /* ============================
