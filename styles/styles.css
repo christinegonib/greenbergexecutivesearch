@@ -8,7 +8,7 @@ body {
   padding: 0;
   line-height: 1.6;
   color: #333;
-  background-color: #e5e2e2; /* Default for ABOUT + most pages */
+  background-color: #e5e2e2;
 }
 
 .container {
@@ -25,16 +25,16 @@ h2 {
 }
 
 /* ============================================
-   2. GLOBAL HEADER + NAVIGATION
+   2. GLOBAL HEADER + NAVIGATION — UPDATED
 ============================================ */
 
 header {
   background-color: #1a3c2f;
   color: white;
-  padding: 20px 40px;
+  padding: 15px 20px; /* Sleeker header */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* Perfect vertical alignment */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -44,8 +44,10 @@ header {
   margin: 0;
   font-size: 2rem;
   color: white;
+  line-height: 1.2;
 }
 
+/* Desktop nav */
 nav ul {
   list-style: none;
   display: flex;
@@ -78,6 +80,54 @@ nav ul li a:hover {
   height: 3px;
   background: white;
   border-radius: 3px;
+}
+
+/* ============================================
+   MOBILE NAVIGATION — UPDATED
+============================================ */
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #1a3c2f;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li a {
+    padding: 12px 20px; /* Better spacing */
+    font-size: 1.1rem;
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+
+  nav ul li + li a {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
+/* Compact mobile title */
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  header {
+    padding: 12px 18px;
+  }
 }
 
 /* ============================================
@@ -303,10 +353,9 @@ nav ul li a:hover {
 }
 
 /* ============================================
-   6. CONTACT PAGE ONLY — RESTORED DESIGN
+   6. CONTACT PAGE ONLY
 ============================================ */
 
-/* Main card containers */
 .contact-card,
 .contact-info,
 .contact-message {
@@ -317,14 +366,12 @@ nav ul li a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Larger card for intro + contact info */
 .contact-card {
   padding: 30px;
   max-width: 800px;
   margin: 40px auto;
 }
 
-/* Contact info block */
 .contact-info p {
   margin: 0.5rem 0;
 }
@@ -338,13 +385,11 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Contact form wrapper */
 .contact-form {
   margin: 40px auto;
   max-width: 800px;
 }
 
-/* Form card styling */
 .contact-form form {
   max-width: 600px;
   margin: auto;
@@ -354,14 +399,12 @@ nav ul li a:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Form labels */
 .contact-form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
 }
 
-/* Inputs + textarea */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -373,7 +416,6 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-/* Submit button */
 .contact-form button {
   background-color: #1a3c2f;
   color: white;
@@ -389,7 +431,6 @@ nav ul li a:hover {
   background-color: #145c45;
 }
 
-/* Confirmation message */
 .confirmation-message {
   max-width: 600px;
   margin: 20px auto;
@@ -401,7 +442,6 @@ nav ul li a:hover {
   border-radius: 6px;
 }
 
-/* Contact footer image + tagline */
 .contact-footer {
   text-align: center;
   margin: 40px auto;
@@ -429,172 +469,8 @@ nav ul li a:hover {
   line-height: 1.7;
 }
 
-/* ============================
-   HOMEPAGE — ORIGINAL DESIGN
-============================ */
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 420px;
-  overflow: hidden;
-  font-family: "Open Sans", sans-serif;
-}
-
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  z-index: 1;
-  position: relative;
-}
-
-.hero-text {
-  position: absolute;
-  background-color: rgba(23, 22, 22, 0.75);
-  color: white;
-  padding: 20px 35px;
-  max-width: 620px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 2;
-}
-
-.home-hero .hero-text {
-  bottom: 18%;
-  left: 5%;
-}
-
-.services-hero .hero-text {
-  bottom: 120px;
-  left: 60px;
-}
-
-.hero-text h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  line-height: 1.4;
-  color: white;
-}
-
-.hero-text p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  padding-left: 0;
-}
-
-.cta-buttons a {
-  background-color: #1a3c2f;
-  color: #ffffff;
-  padding: 12px 28px;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-.cta-buttons a:hover {
-  background-color: #44564d;
-}
-
 /* ============================================
-   9. RESPONSIVE RULES
-============================================ */
-
-@media (max-width: 1024px) {
-  .hamburger {
-    display: flex;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #1a3c2f;
-    padding: 1rem 0;
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 6px;
-  }
-
-  nav ul.open {
-    display: flex;
-  }
-
-  nav ul li a {
-    padding: 10px 0;
-    font-size: 1.1rem;
-  }
-
-  .hero-text {
-    bottom: 20px !important;
-    left: 50% !important;
-    transform: translateX(-50%);
-    text-align: center;
-    max-width: 90%;
-  }
-
-  .cta-buttons {
-    justify-content: center;
-  }
-
-  .about-sectors-flex {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .sectors-content {
-    max-width: 100%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    height: 520px;
-  }
-
-  .hero-text {
-    padding: 15px 20px !important;
-    bottom: 15px !important;
-    max-width: 95%;
-  }
-
-  .hero-text h2 {
-    font-size: 1.2rem;
-    line-height: 1.3;
-  }
-
-  .hero-text p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-  }
-
-  .cta-buttons a {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-}
-
-/* ============================================
-   7. TESTIMONIALS PAGE — RESTORED DESIGN
+   7. TESTIMONIALS PAGE — UPDATED
 ============================================ */
 
 body.testimonials-page {
@@ -607,19 +483,10 @@ body.testimonials-page {
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   margin: 60px auto;
-  max-width: 1000px; /* gives room for side-by-side */
+  max-width: 1000px;
 }
 
-.testimonial-graphic {
-  max-width: 320px;
-  height: auto;
-  margin: 0 auto 40px;
-  display: block;
-}
-/* ============================
-   TESTIMONIALS — FLEX LAYOUT
-============================ */
-
+/* FLEX LAYOUT */
 .testimonial-flex {
   display: flex;
   align-items: center;
@@ -627,37 +494,28 @@ body.testimonials-page {
   gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
-}
-.testimonial-flex {
   text-align: left;
 }
 
-/* Left side: graphic */
 .testimonial-graphic-wrapper {
   flex: 0 0 40%;
   text-align: center;
 }
 
-/* Right side: carousel */
 .testimonial-carousel-wrapper {
   flex: 1;
 }
 
-/* Graphic sizing on desktop */
 .testimonial-graphic {
   max-width: 260px;
   height: auto;
 }
-/* Stack vertically on smaller screens */
+
+/* MOBILE STACK */
 @media (max-width: 900px) {
   .testimonial-flex {
     flex-direction: column;
     text-align: center;
-  }
-
-  .testimonial-graphic-wrapper,
-  .testimonial-carousel-wrapper {
-    flex: 1 1 100%;
   }
 
   .testimonial-graphic {
@@ -704,14 +562,6 @@ body.testimonials-page {
   font-size: 0.95rem;
   color: #f2f2f2;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-.divider {
-  border: none;
-  height: 2px;
-  background-color: #c8cdc8;
-  width: 60px;
-  margin: 25px auto;
 }
 
 .carousel-control-prev-icon,
