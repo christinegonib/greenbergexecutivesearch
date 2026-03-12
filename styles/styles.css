@@ -607,8 +607,7 @@ body.testimonials-page {
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   margin: 60px auto;
-  max-width: 900px;
-  text-align: center;
+  max-width: 1000px; /* gives room for side-by-side */
 }
 
 .testimonial-graphic {
@@ -616,6 +615,55 @@ body.testimonials-page {
   height: auto;
   margin: 0 auto 40px;
   display: block;
+}
+/* ============================
+   TESTIMONIALS — FLEX LAYOUT
+============================ */
+
+.testimonial-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.testimonial-flex {
+  text-align: left;
+}
+
+/* Left side: graphic */
+.testimonial-graphic-wrapper {
+  flex: 0 0 40%;
+  text-align: center;
+}
+
+/* Right side: carousel */
+.testimonial-carousel-wrapper {
+  flex: 1;
+}
+
+/* Graphic sizing on desktop */
+.testimonial-graphic {
+  max-width: 260px;
+  height: auto;
+}
+/* Stack vertically on smaller screens */
+@media (max-width: 900px) {
+  .testimonial-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-graphic-wrapper,
+  .testimonial-carousel-wrapper {
+    flex: 1 1 100%;
+  }
+
+  .testimonial-graphic {
+    max-width: 220px;
+    margin-bottom: 20px;
+  }
 }
 
 .quote-box {
