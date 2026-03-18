@@ -484,9 +484,10 @@ nav ul li a:hover {
     max-width: 90%;
   }
 }
-
 @media (max-width: 480px) {
-  .hero-text {
+  .home-hero .hero-text,
+  .services-hero .hero-text {
+    bottom: 20px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     text-align: center;
