@@ -39,14 +39,6 @@ header {
   top: 0;
   z-index: 1000;
 }
-/* Make header full-bleed to match hero */
-header {
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
 
 .site-title {
   margin: 0;
