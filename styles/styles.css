@@ -410,6 +410,15 @@ nav ul li a:hover {
 }
 
 /* HERO CTA BUTTONS — RESTORE ORIGINAL LOOK */
+
+.hero-text h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.9rem; /* adjust if you want it bigger */
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
 .cta-buttons {
   margin-top: 20px;
   display: flex;
