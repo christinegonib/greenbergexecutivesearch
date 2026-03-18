@@ -31,10 +31,10 @@ h2 {
 header {
   background-color: #1a3c2f;
   color: white;
-  padding: 15px 20px; /* Sleeker header */
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Perfect vertical alignment */
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -87,24 +87,6 @@ nav ul li a:hover {
 ============================================ */
 
 @media (max-width: 1024px) {
-  /* MOBILE HERO — HOMEPAGE */
-  .home-hero .hero-text {
-    bottom: 20px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    text-align: center;
-    max-width: 90%;
-  }
-
-  /* MOBILE HERO — SERVICES */
-  .services-hero .hero-text {
-    bottom: 40px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    text-align: center;
-    max-width: 90%;
-  }
-
   .hamburger {
     display: flex;
   }
@@ -124,7 +106,7 @@ nav ul li a:hover {
   }
 
   nav ul li a {
-    padding: 12px 20px; /* Better spacing */
+    padding: 12px 20px;
     font-size: 1.1rem;
     text-align: left;
     width: 100%;
@@ -138,14 +120,6 @@ nav ul li a:hover {
 
 /* Compact mobile title */
 @media (max-width: 480px) {
-  /* UNIVERSAL TINY-SCREEN FALLBACK */
-  .hero-text {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    text-align: center;
-    max-width: 95%;
-  }
-
   .site-title {
     font-size: 1.4rem;
     line-height: 1.2;
@@ -377,16 +351,25 @@ nav ul li a:hover {
     margin-bottom: 4px;
   }
 }
+
 /* ============================
-   HOMEPAGE — ORIGINAL DESIGN
+   HOMEPAGE — ORIGINAL DESIGN (RESTORED)
 ============================ */
 
+/* FULL-WIDTH HERO (NO WHITE/GRAY BORDER) */
 .hero {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 420px;
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
+
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0;
+  background: none;
 }
 
 .hero-img {
@@ -398,37 +381,25 @@ nav ul li a:hover {
   position: relative;
 }
 
+/* HERO TEXT BOX — ORIGINAL POLISHED LOOK */
 .hero-text {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(23, 22, 22, 0.75);
   color: white;
   padding: 20px 35px;
   max-width: 620px;
-
-  border: 2px solid rgba(255, 255, 255, 0.9);
-
+  border: none;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
 
-.home-hero .hero-text {
-  bottom: 18%;
-  left: 5%;
-}
-
-.services-hero .hero-text {
-  bottom: 120px;
-  left: 60px;
-}
-
-/* DESKTOP HERO — RESTORE ORIGINAL POSITIONING */
+/* DESKTOP POSITIONING */
 .home-hero .hero-text {
   bottom: 18%;
   left: 5%;
   transform: none;
   text-align: left;
-  max-width: 620px;
 }
 
 .services-hero .hero-text {
@@ -436,7 +407,37 @@ nav ul li a:hover {
   left: 60px;
   transform: none;
   text-align: left;
-  max-width: 620px;
+}
+
+/* ============================
+   HOMEPAGE — MOBILE HERO
+============================ */
+
+@media (max-width: 1024px) {
+  .home-hero .hero-text {
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .services-hero .hero-text {
+    bottom: 40px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center;
+    max-width: 95%;
+  }
 }
 
 /* ============================================
