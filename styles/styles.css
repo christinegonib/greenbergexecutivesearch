@@ -47,6 +47,19 @@ header {
   line-height: 1.2;
 }
 
+/* Prevent header text from wrapping on mid-size screens */
+@media (max-width: 1300px) {
+  .site-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+}
+
 /* Desktop nav */
 nav ul {
   list-style: none;
