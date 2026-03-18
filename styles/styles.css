@@ -40,6 +40,16 @@ header {
   z-index: 1000;
 }
 
+/* Full-bleed wrapper for header */
+.header-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .site-title {
   margin: 0;
   font-size: 2rem;
