@@ -409,6 +409,28 @@ nav ul li a:hover {
   text-align: left;
 }
 
+/* HERO CTA BUTTONS — RESTORE ORIGINAL LOOK */
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.cta-buttons a {
+  background-color: #1a3c2f; /* deep green */
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.cta-buttons a:hover {
+  background-color: #2d5a47; /* slightly lighter green */
+}
+
 /* ============================
    HOMEPAGE — MOBILE HERO
 ============================ */
