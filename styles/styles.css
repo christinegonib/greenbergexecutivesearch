@@ -467,6 +467,29 @@ nav ul li a:hover {
    HOMEPAGE — MOBILE HERO
 ============================ */
 
+/* Fix hero height on tablets */
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
+    min-height: 420px;
+    padding-bottom: 40px;
+  }
+
+  .hero-img {
+    height: 100%;
+    min-height: 420px;
+  }
+}
+
+/* Fix hero height on small phones */
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    min-height: 480px;
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 1024px) {
   .home-hero .hero-text {
     bottom: 20px !important;
